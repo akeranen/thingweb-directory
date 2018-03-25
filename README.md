@@ -33,7 +33,7 @@ On Windows, the execution will fail with a Batch error message. If [Mingw](http:
 
 The HTTP endpoint provides an HTML client to register and discover Thing Descriptions. This client accesses a REST API to manage Thing Descriptions that complies to the [IETF Resource Directory specification](https://tools.ietf.org/html/draft-ietf-core-resource-directory-12). Registration is done by POSTing on [`/td`](http://localhost:8080/td) and discovery can be performed on [`td-lookup/ep`](http://localhost:8080/td-lookup/ep), [`td-lookup/res`](http://localhost:8080/td-lookup/res) and [`td-lookup/sem`](http://localhost:8080/td-lookup/sem) (which expects a SPARQL graph pattern as query parameter).
 
-See `src/main/resources/api.json` for a formal specification of the Thing Directory API. This file is exposed by the server at [`/api.json`](http://localhost:8080/api.json). It can e.g. be processed by the [Swagger UI](http://swagger.io/swagger-ui/) to render an online documentation. See the [Open API Initiative](https://www.openapis.org/) for more details.
+See `src/main/resources/public/api.json` for a formal specification of the Thing Directory API. This file is exposed by the server at [`/api.json`](http://localhost:8080/api.json). It can e.g. be processed by the [Swagger UI](http://swagger.io/swagger-ui/) to render an online documentation. See the [Open API Initiative](https://www.openapis.org/) for more details.
 
 ### Building from sources
 
